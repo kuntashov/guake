@@ -900,7 +900,7 @@ class Guake(SimpleGladeApp):
                 window_rect.x = 0
             elif halignment == ALIGN_RIGHT:
                 window_rect.x = total_width - window_rect.width
-        window_rect.y = 0
+        window_rect.y = 1081 #kuntashov: workaraund for my dual-monitor configuration
         return window_rect
 
     def get_running_fg_processes(self):
